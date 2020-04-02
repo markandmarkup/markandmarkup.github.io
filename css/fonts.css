@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT-Mono-Bold';
+    src:url('PT-Mono-Bold.ttf.woff') format('woff'),
+    url('PT-Mono-Bold.ttf.svg#PT-Mono-Bold') format('svg'),
+    url('PT-Mono-Bold.ttf.eot'),
+    url('PT-Mono-Bold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
