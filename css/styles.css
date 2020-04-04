@@ -83,6 +83,7 @@ nav, section {
     background-color: #f0f0f0;
     padding: 3px 0 3px 5rem;
     margin-bottom: 2rem;
+    min-height: 3rem;
 }
 
 .text-link , .text-link:visited {
@@ -115,7 +116,7 @@ nav .text-link {
     text-decoration: underline;
 }
 
-.projects-container {
+.section-container {
     border-left: 1px solid #21385e;
 }
 
@@ -140,6 +141,25 @@ nav .text-link {
 
 .project-text-container {
     margin-right: 1.5rem;
+}
+
+#about .section-container {
+    padding: 1.5rem 0;
+}
+
+.bio {
+    border-left: 1px solid #c0d8e0;
+    padding-left: 1.5rem;
+}
+
+.bio p {
+    margin-top: 1.5rem;
+    margin-right: 6rem;
+}
+
+.img-headshot {
+    display: block;
+    width: 9rem;
 }
 
 .side-numbers {
