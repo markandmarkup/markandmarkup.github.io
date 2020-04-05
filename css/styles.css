@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    position: relative;
     line-height: 1.5rem;
     font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
     color: #21385e;
@@ -26,6 +27,14 @@ body {
 
 .indent-4 {
     margin-left: 6rem;
+}
+
+.mt-1 {
+    margin-top: 1.5rem;
+}
+
+.mt-2 {
+    margin-top: 3rem;
 }
 
 
@@ -120,12 +129,12 @@ nav .text-link {
     border-left: 1px solid #21385e;
 }
 
-.project:last-child {
-    margin-bottom: 0;
-}
-
 .project {
     margin-bottom: 1.5rem;
+}
+
+.project:last-child {
+    margin-bottom: 0;
 }
 
 .project-content {
@@ -143,7 +152,7 @@ nav .text-link {
     margin-right: 1.5rem;
 }
 
-#about .section-container {
+#about .section-container, #contact .section-container {
     padding: 1.5rem 0;
 }
 
@@ -162,6 +171,31 @@ nav .text-link {
     width: 9rem;
 }
 
+.social-link-container {
+    border-left: 1px solid #c0d8e0;
+    padding: 0.75rem 1.5rem;
+}
+
+.social-link {
+    padding: 0.5rem 0;
+    overflow: auto;
+}
+
+.social-link a:active {
+    color: #c0d8e0;
+}
+
+
+.social-icon {
+    height: 2rem;
+    float: left;
+}
+
+.social-link span {
+    display: inline-block;
+    margin: 0.25rem 1rem 0 1rem;
+}
+
 .side-numbers {
     width: 4rem;
     position: absolute;
@@ -173,4 +207,11 @@ nav .text-link {
 
 p {
     margin: 0;
+}
+
+.contact-bg {
+    display: block;
+    position: relative;
+    height: 12rem;
+    left: -2.5rem;
 }

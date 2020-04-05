@@ -1,9 +1,22 @@
 window.addEventListener('load', ()=>{
 
     const sidebars = document.querySelectorAll('.side-numbers');
+    const socialLinks = document.querySelectorAll('.social-link a')
 
     var sideNumberStart = 4;
     var fontSize = parseInt(window.getComputedStyle(document.querySelector('html')).fontSize);
+
+    socialLinks.forEach((socialLink)=>{
+        socialLink.addEventListener('mouseover', (e)=>{
+            socialLink.children[1].style.textDecoration = 'underline';
+        })
+    });
+
+    socialLinks.forEach((socialLink)=>{
+        socialLink.addEventListener('mouseleave', (e)=>{
+            socialLink.children[1].style.textDecoration = 'none';
+        })
+    });
 
     sidebars.forEach((sidebar, index)=>{
         if (index > 0) {
