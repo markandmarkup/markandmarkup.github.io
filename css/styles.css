@@ -76,6 +76,7 @@ h2 {
 h3 {
     margin: 0;
     font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
+    font-weight: normal;
 }
 
 .code {
