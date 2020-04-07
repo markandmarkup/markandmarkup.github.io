@@ -9,7 +9,7 @@ html {
 body {
     position: relative;
     line-height: 1.5rem;
-    font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
+    font-family: 'PT Mono', Courier, sans-serif;
     color: #21385e;
 }
 
@@ -75,6 +75,11 @@ h2 {
 
 h3 {
     margin: 0;
+    font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
+}
+
+.code {
+    font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
 }
 
 .light-text {
@@ -95,9 +100,10 @@ nav, section {
     min-height: 3rem;
 }
 
-.text-link , .text-link:visited {
+.text-link, .text-link:visited {
     text-decoration: none;
     color: inherit;
+    font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
 }
 
 .text-link:hover {
@@ -119,6 +125,7 @@ nav .text-link {
     background-color: #d5d5d5;
     text-decoration: none;
     color: inherit;
+    font-family: 'PT-Mono-Bold', 'PT Mono', Courier, sans-serif;
 }
 
 .box-link:hover {
@@ -173,6 +180,10 @@ nav .text-link {
     width: 9rem;
 }
 
+#contact p {
+    margin-right: 2rem;
+}
+
 .social-link-container {
     border-left: 1px solid #c0d8e0;
     padding: 0.75rem 1.5rem;
@@ -220,30 +231,51 @@ p {
 
 @media screen and (max-width: 1035px) {
 
+    .center-container {
+        width: 95%;
+    }
+
+    .top-logo, h1 {
+        left: 0;
+    }
+
+    .top-logo {
+        height: 5rem;
+    }
+
+    .project-image {
+        height: 10.5rem;
+        float: right;
+    }
+
+    .contact-bg {
+        left: 0;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
 
-}
-
-@media screen and (max-width: 500px) {
-
     html {
         font-size: 14px;
     }
+
+    .bio p {
+        margin-top: 1.5rem;
+        margin-right: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
 
     .center-container {
         width: 98%;
     }
 
     .top-logo {
-        left: 5px;
         height: unset;
         width: 23%;
-    }
-
-    h1 {
-        left: 5px;
     }
 
     .header-subtitle {
@@ -259,10 +291,20 @@ p {
         height: 7.5rem;
         width: 85%;
         margin-bottom: 1.5rem;
+        float: left;
     }
 
     .side-numbers {
         width: 3rem;
         padding-left: 0.5rem;
+    }
+
+    .contact-bg {
+        height: unset;
+        width: 75%;
+    }
+
+    .remover {
+        display: none;
     }
 }

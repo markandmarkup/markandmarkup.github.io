@@ -3,16 +3,22 @@ const socialLinks = document.querySelectorAll('.social-link a');
 
 window.addEventListener('load', ()=>{
     addSocialLinkUnderline(socialLinks);
-    generateSideBarNumbers(sidebars);
 
-    if (window.innerWidth <= 500) {
+    if (window.innerWidth <= 650) {
         resizeHeader();
+        shortenSocialLinkText(socialLinks);
     }
+
+    generateSideBarNumbers(sidebars);
 });
 
 window.addEventListener('resize', ()=>{
-    if (window.innerWidth <= 500) {
+
+    if (window.innerWidth <= 650) {
         resizeHeader();
+        shortenSocialLinkText(socialLinks);
+    }
+    if (window.innerWidth <= 1035) {
         generateSideBarNumbers(sidebars);
     }
 });
@@ -53,4 +59,11 @@ function resizeHeader() {
     let topLogo = document.getElementsByClassName('top-logo')
     let logoHeight = parseInt(window.getComputedStyle(topLogo[0]).height);
     topLogo[0].nextElementSibling.style.fontSize = (Math.floor(logoHeight) + 2) + 'px';
+}
+
+function shortenSocialLinkText(socialLinks) {
+    let shortTextContent = ['Twitter', 'GitHub', 'Codepen'];
+    socialLinks.forEach((socialLink, index)=>{
+            socialLink.children[1].textContent = shortTextContent[index];
+    });
 }
